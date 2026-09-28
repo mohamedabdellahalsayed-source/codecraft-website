@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCraft | شركة برمجة احترافية</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <div class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">CodeCraft</span>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">الرئيسية</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#projects">أعمالنا</a>
+                <a href="#team">فريقنا</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <p class="hero-tag">شركة برمجة متخصصة</p>
+            <h1 class="hero-title">
+                نبني تطبيقاتك<br />
+                <span class="typed-text" id="typedText"></span>
+            </h1>
+            <p class="hero-desc">
+                نحوّل أفكارك إلى منتجات رقمية حقيقية — من تصميم الواجهات حتى البنية التحتية السحابية.
+            </p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">ابدأ مشروعك</a>
+                <a href="#projects" class="btn btn-outline">شاهد أعمالنا</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num" data-target="120">0</span><span>+</span>
+                    <p>مشروع مُنجز</p>
+                </div>
+                <div class="stat"><span class="stat-num" data-target="85">0</span><span>+</span>
+                    <p>عميل سعيد</p>
+                </div>
+                <div class="stat"><span class="stat-num" data-target="7">0</span><span>+</span>
+                    <p>سنوات خبرة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">ما نقدمه</p>
+                <h2>خدماتنا</h2>
+                <p class="section-sub">نوفر حلولاً متكاملة تلبي احتياجات عملك الرقمي</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon">🌐</div>
+                    <h3>تطوير الويب</h3>
+                    <p>مواقع وتطبيقات ويب سريعة وآمنة باستخدام أحدث التقنيات.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">📱</div>
+                    <h3>تطبيقات الجوال</h3>
+                    <p>تطبيقات iOS وAndroid بتجربة مستخدم استثنائية.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🤖</div>
+                    <h3>الذكاء الاصطناعي</h3>
+                    <p>دمج نماذج الذكاء الاصطناعي في منتجاتك لأتمتة العمليات.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">☁️</div>
+                    <h3>الحلول السحابية</h3>
+                    <p>بنية تحتية موثوقة وقابلة للتوسع على AWS وGCP وAzure.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🎨</div>
+                    <h3>تصميم UI/UX</h3>
+                    <p>تصاميم جذابة وسهلة الاستخدام تزيد من تحويل الزوار.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🔒</div>
+                    <h3>الأمن السيبراني</h3>
+                    <p>اختبار اختراق وتحصين أنظمتك ضد الهجمات الإلكترونية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">ما أنجزناه</p>
+                <h2>أعمالنا</h2>
+                <p class="section-sub">نماذج من مشاريع حقيقية سلّمناها لعملائنا</p>
+            </div>
+            <div class="filter-btns" id="filterBtns">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">ويب</button>
+                <button class="filter-btn" data-filter="mobile">جوال</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card reveal" data-cat="web">
+                    <div class="project-img web-bg">
+                        <span>🛒</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">ويب</span>
+                        <h3>منصة تجارة إلكترونية</h3>
+                        <p>متجر متكامل بنظام دفع وإدارة مخزون وتتبع طلبات.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-cat="mobile">
+                    <div class="project-img mobile-bg">
+                        <span>🏥</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">جوال</span>
+                        <h3>تطبيق حجز مواعيد طبية</h3>
+                        <p>تطبيق يربط المرضى بالأطباء مع نظام تذكير تلقائي.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-cat="ai">
+                    <div class="project-img ai-bg">
+                        <span>📊</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">AI</span>
+                        <h3>لوحة تحليلات ذكية</h3>
+                        <p>داشبورد يستخدم ML لتوقع المبيعات وتحليل سلوك العملاء.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-cat="web">
+                    <div class="project-img web-bg">
+                        <span>📰</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">ويب</span>
+                        <h3>بوابة إخبارية</h3>
+                        <p>منصة نشر محتوى سريعة مع نظام إدارة محتوى مخصص.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-cat="mobile">
+                    <div class="project-img mobile-bg">
+                        <span>🚚</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">جوال</span>
+                        <h3>تطبيق توصيل طلبات</h3>
+                        <p>تتبع مباشر للسائقين وخوارزمية توزيع طلبات ذكية.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-cat="ai">
+                    <div class="project-img ai-bg">
+                        <span>💬</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">AI</span>
+                        <h3>شات بوت خدمة عملاء</h3>
+                        <p>مساعد ذكي يرد على العملاء على مدار الساعة بدقة عالية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">من نحن</p>
+                <h2>فريقنا</h2>
+                <p class="section-sub">خبراء شغوفون بالتقنية وبناء الحلول الإبداعية</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background:#4f46e5">أ.م</div>
+                    <h3>أحمد محمد</h3>
+                    <p>مؤسس ومدير تقني</p>
+                    <div class="team-socials">
+                        <a href="#">in</a>
+                        <a href="#">gh</a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background:#0ea5e9">س.ع</div>
+                    <h3>سارة عبدالله</h3>
+                    <p>مصممة UI/UX</p>
+                    <div class="team-socials">
+                        <a href="#">in</a>
+                        <a href="#">be</a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background:#10b981">م.خ</div>
+                    <h3>محمد خالد</h3>
+                    <p>مطور Full-Stack</p>
+                    <div class="team-socials">
+                        <a href="#">in</a>
+                        <a href="#">gh</a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background:#f59e0b">ر.ن</div>
+                    <h3>رنا ناصر</h3>
+                    <p>مهندسة AI/ML</p>
+                    <div class="team-socials">
+                        <a href="#">in</a>
+                        <a href="#">gh</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+        <div class="container contact-inner">
+            <div class="section-head">
+                <p class="section-tag">تحدث معنا</p>
+                <h2>تواصل معنا</h2>
+                <p class="section-sub">أخبرنا عن مشروعك وسنرد عليك خلال 24 ساعة</p>
+            </div>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mvkgdoyd" method="POST"
+                novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" id="name" name="name" placeholder="اسمك الكامل" required />
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required />
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="service">نوع الخدمة</label>
+                    <select id="service" name="service">
+                        <option value="">اختر الخدمة...</option>
+                        <option value="web">تطوير ويب</option>
+                        <option value="mobile">تطبيق جوال</option>
+                        <option value="ai">ذكاء اصطناعي</option>
+                        <option value="cloud">حلول سحابية</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">رسالتك</label>
+                    <textarea id="message" name="message" rows="5" placeholder="اشرح فكرة مشروعك..." required></textarea>
+                    <span class="form-error" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                    إرسال الرسالة
+                </button>
+                <div class="form-success" id="formSuccess">
+                    ✅ تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    <span class="logo-text">CodeCraft</span>
+                </div>
+                <p>نبني مستقبلك الرقمي بكل احترافية وإبداع.</p>
+            </div>
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <a href="#home">الرئيسية</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#projects">أعمالنا</a>
+                <a href="#contact">تواصل معنا</a>
+            </div>
+            <div class="footer-contact">
+                <h4>معلومات التواصل</h4>
+                <p>📧 hello@codecraft.dev</p>
+                <p>📞 +201030922683</p>
+                <p>📍 القاهره جمهوريه مصر العربيه</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; <span id="year"></span> CodeCraft</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop" aria-label="العودة للأعلى">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
